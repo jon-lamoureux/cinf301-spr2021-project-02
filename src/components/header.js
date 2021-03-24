@@ -6,7 +6,7 @@ import { faHome, faUser, faWrench} from '@fortawesome/free-solid-svg-icons'
 
 const header = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <nav><Navbar bg="light" expand="lg">
             <LinkContainer to="/">
   <Navbar.Brand><FontAwesomeIcon icon={faHome} /> Home</Navbar.Brand>
   </LinkContainer>
@@ -22,6 +22,7 @@ const header = () => {
     </Nav>
   </Navbar.Collapse>
 </Navbar>
+</nav>
     )
 }
 
