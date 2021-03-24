@@ -2,7 +2,7 @@ import React from 'react'
 import {Navbar, Nav} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faWrench} from '@fortawesome/free-solid-svg-icons'
 
 const header = () => {
     return (
@@ -14,10 +14,10 @@ const header = () => {
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
         <LinkContainer to="/service">
-      <Nav.Link>Service</Nav.Link>
+      <Nav.Link><FontAwesomeIcon icon={faUser} /> Profile</Nav.Link>
       </LinkContainer>
       <LinkContainer to="/about">
-      <Nav.Link>About</Nav.Link>
+      <Nav.Link><FontAwesomeIcon icon={faWrench} /> Settings</Nav.Link>
       </LinkContainer>
     </Nav>
   </Navbar.Collapse>
