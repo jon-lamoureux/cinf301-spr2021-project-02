@@ -1,9 +1,11 @@
-# Author: Jonathan Lamoureux
-# Assignment: Project 2
-# Date due: 3/24/2021
-
-# Libraries Used
-React Datepicker [react-datepicker](https://reactdatepicker.com/)
+### Author:
+Jonathan Lamoureux
+### Assignment:
+Project 2
+### Date due:
+3/24/2021
+### Libraries Used
+[react-datepicker](https://reactdatepicker.com/)
 
 # Getting Started with Create React App
 
