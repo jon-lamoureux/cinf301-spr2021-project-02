@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export default function Profile(props) {
    return (
      <div>
-      <span>User {props.stats.username} has an email address of {props.stats.email} and a birthdate of {props.stats.startDate}</span>
+      <div className="profile">User <span className="bold">{props.stats.username}</span> has an email address of <span className="bold">{props.stats.email}</span> and a birthdate of <span className="bold">{props.stats.startDate}</span></div>
     </div>
     );
 }

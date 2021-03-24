@@ -10,3 +10,15 @@
   position: absolute;
   width: 100%;
 }
+#status {
+  display: none;
+  font-weight:bold;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.profile {
+  padding: 10px;
+}
+.bold {
+  font-weight: bold;
+}
