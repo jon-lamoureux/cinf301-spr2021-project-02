@@ -4,6 +4,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import Header from './components/header.js'
+import Profile from './components/profile.js'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Header/>
       <Switch>
         <Route exact path="/" component={App} />
+        <Route exact path="/profile" component={Profile} />
 
       </Switch>
     </Router>

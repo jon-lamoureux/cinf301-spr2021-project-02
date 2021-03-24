@@ -25,10 +25,10 @@ export default function App() {
         </nav>
 
         <Switch>
-          <Route path="/about">
+          <Route path="/profile">
             <About />
           </Route>
-          <Route path="/users">
+          <Route path="/settings">
             <Users />
           </Route>
           <Route path="/">
