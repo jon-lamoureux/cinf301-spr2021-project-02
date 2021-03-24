@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import Header from './components/header.js'
 import Profile from './components/profile.js'
+import Settings from './components/settings.js'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={App} />
         <Route exact path="/profile" component={Profile} />
+        <Route exact path="/settings" component={Settings} />
 
       </Switch>
     </Router>
