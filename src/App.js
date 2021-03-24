@@ -8,7 +8,7 @@ import Home from './components/home.js';
 import Header from './components/header.js'
 import Profile from './components/profile.js'
 import Footer from './components/footer.js'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 export default function App() {
   const [startDate, setStartDate] = useState(new Date());
@@ -19,14 +19,13 @@ export default function App() {
       setStartDate(date);
       setUsername(username);
       setEmail(email);
-      window.location.href="/profile";
   }
 
   function renderProfile(prop) {
     return <Profile stats={prop} />;
   }
 
-  const prop = { startDate: startDate, username: username, email: email };
+  const prop = { startDate: String(startDate), username: username, email: email };
   return (
     <div>
     <Router>
@@ -38,9 +37,9 @@ export default function App() {
     <Route path="/settings">
     <div id='center'>
       <h1>User Settings</h1>
-      Username: <input type="text" value={username} id="username"/>
+      Username: <input type="text" defaultValue={username} id="username"/>
       <br/>
-      Email: <input type="text" value={email} id="email"/>
+      Email: <input type="text" defaultValue={email} id="email" />
       <br/>
       Birthdate: <DatePicker selected={startDate} onChange={date => setStartDate(date)} id="date"/>
       <br/>
